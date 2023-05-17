@@ -19,6 +19,9 @@ import Settings from '../Screens/Setting';
 import Profile from '../Screens/Profile';
 import FAQs from '../Screens/FAQs';
 import Support from '../Screens/Support';
+import LoginAccount from '../Screens/LoginAccount';
+import RestaurantDetails from '../Screens/Foods/RestaurantDetails';
+import NearByRestaurant from '../Screens/Foods/NearByRestaurant';
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
@@ -36,7 +39,10 @@ function MyDrawer() {
         },
       }}>
       <Drawer.Screen name="Home" component={HomeScreen} />
+      <Drawer.Screen name="Login" component={LoginAccount} />
       <Drawer.Screen name="Food" component={Food} />
+      <Drawer.Screen name="NearByRestaurant" component={NearByRestaurant} />
+      <Drawer.Screen name="RestaurantDetails" component={RestaurantDetails} />
       <Drawer.Screen name="ApplyForJob" component={ApplyForJob} />
       <Drawer.Screen name="Settings" component={Settings} />
       <Drawer.Screen name="Profile" component={Profile} />

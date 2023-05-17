@@ -113,7 +113,7 @@ const Header = (Props: Props) => {
       ) : (
         <View style={{flex: 2, ...logoStyle}}>
           <Image
-            source={require('../../Images/LogoIcon.png')}
+            source={require('../../Images/LOGO.png')}
             resizeMode="contain"
             style={styles.logo}
           />

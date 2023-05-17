@@ -14,9 +14,32 @@ import Header from '../../../Components/Header';
 import Icon from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-const NearByRestaurant = ({navigation, route}: any) => {
-  const data = route.params;
-
+const NearByRestaurant = ({navigation}: any) => {
+  // const data = route.params;
+  const data = [
+    { Img: require('../../../Images/rbg.png'),
+      Title: 'Chef Art Restaurant',
+      // Icon:"",
+      Miles: '1.5 miles away',
+      // SecIcon:"",
+      SecMiles:"4.2"
+    },
+    { Img: require('../../../Images/rbg.png'),
+      Title: 'Chef Art Restaurant',
+      // Icon:"",
+      Miles: '1.5 miles away',
+      // SecIcon:"",
+      SecMiles:"4.2"
+    },
+    { Img: require('../../../Images/rbg.png'),
+      Title: 'Chef Art Restaurant',
+      // Icon:"",
+      Miles: '1.5 miles away',
+      // SecIcon:"",
+      SecMiles:"4.2"
+    },
+    
+  ];
   return (
     <ScrollView style={{flex: 1}}>
       <View
@@ -81,12 +104,10 @@ const NearByRestaurant = ({navigation, route}: any) => {
         </Text>
       </View>
       {/* Card */}
-      {data &&
-        data.length > 0 &&
-        data.map((e: any, i: number) => {
-          return (
+      {data.map((data,index) => (
             <TouchableOpacity
-              onPress={() => navigation.navigate('RestaurantDetails', e)}
+            key={index}
+              onPress={() => navigation.navigate('RestaurantDetails')}
               activeOpacity={0.8}
               style={{
                 backgroundColor: Color.lightgrey,
@@ -99,7 +120,7 @@ const NearByRestaurant = ({navigation, route}: any) => {
                 marginBottom: 15,
               }}>
               <Image
-                source={require('../../../Images/rbg.png')}
+                source={data.Img}
                 resizeMode="stretch"
                 style={{
                   width: Dimensions.get('screen').width / 1.1,
@@ -124,7 +145,7 @@ const NearByRestaurant = ({navigation, route}: any) => {
                       color: Color.mainColor,
                       fontFamily: 'Poppins-SemiBold',
                     }}>
-                    {e.resturantName}
+                    {data.Title}
                   </Text>
                   <View
                     style={{
@@ -149,7 +170,7 @@ const NearByRestaurant = ({navigation, route}: any) => {
                           color: Color.mainColor,
                           fontFamily: 'Poppins-SemiBold',
                         }}>
-                        1.5 miles away
+                        {data.Miles}
                       </Text>
                     </View>
                     <View
@@ -165,7 +186,7 @@ const NearByRestaurant = ({navigation, route}: any) => {
                           color: Color.mainColor,
                           fontFamily: 'Poppins-SemiBold',
                         }}>
-                        4.2
+                        {data.SecMiles}
                       </Text>
                     </View>
                   </View>
@@ -192,8 +213,7 @@ const NearByRestaurant = ({navigation, route}: any) => {
                 />
               </View>
             </TouchableOpacity>
-          );
-        })}
+        ))}
     </ScrollView>
   );
 };

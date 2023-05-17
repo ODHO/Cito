@@ -76,7 +76,7 @@ const LoginAccount = ({navigation}: any) => {
           <View style={{backgroundColor: Color.lightgrey, height: height}}>
             <View
               style={{
-                backgroundColor: Color.mainColor,
+                backgroundColor: Color.bgMain,
                 height: height / 1.7,
                 borderBottomEndRadius: 100,
                 borderBottomStartRadius: 100,
@@ -84,7 +84,7 @@ const LoginAccount = ({navigation}: any) => {
               {/* logo */}
               <View style={{alignItems: 'center'}}>
                 <Image
-                  source={require('../../Images/logowhite.png')}
+                  source={require('../../Images/LOGO.png')}
                   style={styles.logo}
                   resizeMode="contain"
                 />
@@ -113,9 +113,9 @@ const LoginAccount = ({navigation}: any) => {
                     }}>
                     <TextInput
                       placeholder="Email"
-                      onChangeText={e =>
-                        setLoginFields({...loginFields, email: e})
-                      }
+                      // onChangeText={e =>
+                      //   setLoginFields({...loginFields, email: e})
+                      // }
                       style={{
                         width: Dimensions.get('screen').width / 1.21,
                         padding: 12,
@@ -136,9 +136,9 @@ const LoginAccount = ({navigation}: any) => {
                     <TextInput
                       placeholder="Password"
                       secureTextEntry={passwordEye ? true : false}
-                      onChangeText={e =>
-                        setLoginFields({...loginFields, password: e})
-                      }
+                      // onChangeText={e =>
+                      //   setLoginFields({...loginFields, password: e})
+                      // }
                       style={{
                         width: Dimensions.get('window').width / 1.5,
                         padding: 12,
@@ -177,7 +177,7 @@ const LoginAccount = ({navigation}: any) => {
                 {/* Login Button */}
                 <View style={{alignItems: 'center', marginVertical: 15}}>
                   <TouchableOpacity
-                    onPress={login}
+                    onPress={() => navigation.navigate('Home')}
                     activeOpacity={0.8}
                     style={{
                       backgroundColor: Color.red,

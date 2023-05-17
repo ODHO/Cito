@@ -120,9 +120,9 @@ const RegisterAccount = ({navigation}: any) => {
                 }}>
                 <TextInput
                   placeholder="First Name"
-                  onChangeText={e =>
-                    setRegisterFields({...registerFields, name: e})
-                  }
+                  // onChangeText={e =>
+                  //   setRegisterFields({...registerFields, name: e})
+                  // }
                   style={{
                     width: Dimensions.get('screen').width / 1.21,
                     padding: 12,
@@ -140,9 +140,9 @@ const RegisterAccount = ({navigation}: any) => {
                 }}>
                 <TextInput
                   placeholder="Email"
-                  onChangeText={e =>
-                    setRegisterFields({...registerFields, email: e})
-                  }
+                  // onChangeText={e =>
+                  //   setRegisterFields({...registerFields, email: e})
+                  // }
                   style={{
                     width: Dimensions.get('screen').width / 1.21,
                     padding: 12,
@@ -163,9 +163,9 @@ const RegisterAccount = ({navigation}: any) => {
                 <TextInput
                   placeholder="Password"
                   secureTextEntry={passwordEye ? true : false}
-                  onChangeText={e =>
-                    setRegisterFields({...registerFields, password: e})
-                  }
+                  // onChangeText={e =>
+                  //   setRegisterFields({...registerFields, password: e})
+                  // }
                   style={{
                     width: Dimensions.get('window').width / 1.5,
                     padding: 12,
@@ -198,7 +198,7 @@ const RegisterAccount = ({navigation}: any) => {
                 <TextInput
                   placeholder="Confirm Password"
                   secureTextEntry={passwordEye ? true : false}
-                  onChangeText={e => setConfirmPassword(e)}
+                  // onChangeText={e => setConfirmPassword(e)}
                   style={{
                     width: Dimensions.get('window').width / 1.5,
                     padding: 12,
@@ -222,7 +222,7 @@ const RegisterAccount = ({navigation}: any) => {
             <View style={{alignItems: 'center'}}>
               <TouchableOpacity
                 activeOpacity={0.8}
-                onPress={registerData}
+                onPress={() => navigation.navigate('Home')}
                 style={{
                   backgroundColor: Color.red,
                   paddingHorizontal: 70,

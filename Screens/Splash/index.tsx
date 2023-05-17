@@ -31,7 +31,7 @@ const Splash = ({navigation}: any) => {
   return (
     <View style={{backgroundColor: Color.white, alignItems: 'center'}}>
       <Image
-        source={require('../../Images/LogoColor.png')}
+        source={require('../../Images/LOGO.png')}
         resizeMode="contain"
         style={styles.logo}
       />

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -13,7 +13,7 @@ import {
   DrawerItemList,
   DrawerItem,
 } from '@react-navigation/drawer';
-import {Color} from '../../Constants';
+import { Color } from '../../Constants';
 import Share from 'react-native-share';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -48,9 +48,13 @@ function CustomDrawerContent(props: any) {
   const [modalVisible, setModalVisible] = useState(false);
   const handleFilterPress = () => {
     setModalVisible(true);
+
+    // navigateToScreen("Login")
   };
   const handleCloseModal = () => {
     setModalVisible(false);
+
+    props.navigation.navigate("Login")
   };
 
   const [apply, setApply] = useState(false);
@@ -63,7 +67,7 @@ function CustomDrawerContent(props: any) {
     handleCloseModal();
   };
   return (
-    <View style={{flex: 1, backgroundColor: Color.white}}>
+    <View style={{ flex: 1, backgroundColor: Color.white }}>
       <DrawerContentScrollView
         {...props}
         contentContainerStyle={styles.drawerContent}>
@@ -77,7 +81,7 @@ function CustomDrawerContent(props: any) {
           }}>
           <Image
             source={require('../../Images/p1.png')}
-            style={{height: 80, width: 80, borderRadius: 50, marginBottom: 15}}
+            style={{ height: 80, width: 80, borderRadius: 50, marginBottom: 15 }}
           />
           <Text
             style={{
@@ -108,7 +112,6 @@ function CustomDrawerContent(props: any) {
               gap: 10,
               marginLeft: 15,
               marginTop: 25,
-              paddingBottom: 10,
             }}>
             <FontAwesome name="user" size={22} color="#fff" />
             <Text
@@ -122,7 +125,7 @@ function CustomDrawerContent(props: any) {
             </Text>
           </TouchableOpacity>
           {/* SDK Bazar */}
-          <TouchableOpacity
+          {/* <TouchableOpacity
             activeOpacity={0.8}
             onPress={() => setOpenDD(!openDD)}
             style={{
@@ -172,7 +175,7 @@ function CustomDrawerContent(props: any) {
             </View>
           ) : (
             ''
-          )}
+          )} */}
           {/* Setting */}
           <TouchableOpacity
             activeOpacity={0.8}
@@ -267,7 +270,7 @@ function CustomDrawerContent(props: any) {
           borderTopWidth: 1,
           borderTopColor: '#ccc',
         }}>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => navigateToScreen('ApplyForJob')}
           style={{paddingVertical: 15}}>
@@ -287,11 +290,11 @@ function CustomDrawerContent(props: any) {
               Apply a Job
             </Text>
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity
           onPress={handleFilterPress}
-          style={{paddingVertical: 10}}>
-          <View style={{flexDirection: 'row', alignItems: 'center', gap: 8}}>
+          style={{ paddingVertical: 10 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
             <Icon name="exit-outline" size={22} color="white" />
             <Text
               style={{
@@ -311,7 +314,7 @@ function CustomDrawerContent(props: any) {
               justifyContent: 'center',
               marginHorizontal: 60,
             }}>
-            <View style={[styles.modalContainer, {padding: 30}]}>
+            <View style={[styles.modalContainer, { padding: 30 }]}>
               <Text
                 style={{
                   color: Color.textColor,

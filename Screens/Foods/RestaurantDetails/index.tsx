@@ -139,7 +139,7 @@ const RestaurantDetails = ({navigation, route}: any) => {
           paddingHorizontal: 10,
           paddingBottom: 20,
         }}>
-        <Header
+        {/* <Header
           navigation={navigation}
           backBtn={true}
           backBtnColor="white"
@@ -147,7 +147,7 @@ const RestaurantDetails = ({navigation, route}: any) => {
           cartStyle="white"
           title={data.resturantName}
           titleColor="white"
-        />
+        /> */}
         {/* Search */}
         <View
           style={{

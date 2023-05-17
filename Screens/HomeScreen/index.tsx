@@ -28,15 +28,15 @@ const HomeScreen = ({navigation}: any) => {
   const HomePageBanner = [
     {
       id: 1,
-      image: require('../../Images/HomePageBanner.png'),
+      image: require('../../Images/kfcbanner.png'),
     },
     {
       id: 2,
-      image: require('../../Images/HomePageBanner.png'),
+      image: require('../../Images/angethi.png'),
     },
     {
       id: 3,
-      image: require('../../Images/HomePageBanner.png'),
+      image: require('../../Images/mc1.jpg'),
     },
   ];
 
@@ -234,7 +234,7 @@ const HomeScreen = ({navigation}: any) => {
                 }}>
                 <Image
                   source={item.image}
-                  style={{width: '93%', height: 160}}
+                  style={{width: '93%', height: 160,borderRadius:30}}
                   resizeMode="center"
                 />
               </View>
@@ -284,7 +284,7 @@ const HomeScreen = ({navigation}: any) => {
           <View
             style={{flexDirection: 'row', justifyContent: 'center', gap: 10}}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Food')}
+              onPress={() => navigation.navigate('NearByRestaurant')}
               activeOpacity={0.8}>
               <Image
                 source={require('../../Images/Food.png')}
@@ -304,7 +304,7 @@ const HomeScreen = ({navigation}: any) => {
               activeOpacity={0.8}
               onPress={() => navigation.navigate('JobsHome')}>
               <Image
-                source={require('../../Images/Jobs.png')}
+                source={require('../../Images/rider.png')}
                 style={{width: 110, height: 110, borderRadius: 5}}
               />
               <Text
@@ -317,7 +317,7 @@ const HomeScreen = ({navigation}: any) => {
                 Jobs
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity
+            {/* <TouchableOpacity
               activeOpacity={0.8}
               onPress={() => navigation.navigate('MrriageBureauHome')}>
               <Image
@@ -342,10 +342,10 @@ const HomeScreen = ({navigation}: any) => {
                   Bureau
                 </Text>
               </Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </View>
-        <View
+        {/* <View
           style={{
             alignItems: 'center',
           }}>
@@ -393,7 +393,7 @@ const HomeScreen = ({navigation}: any) => {
               </MapView>
             )}
           </View>
-        </View>
+        </View> */}
       </View>
     </ScrollView>
   );
