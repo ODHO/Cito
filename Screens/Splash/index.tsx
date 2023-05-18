@@ -4,10 +4,7 @@ import {Color} from '../../Constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Splash = ({navigation}: any) => {
-  const checkUser = () => {};
-  useEffect(() => {
-    checkUser();
-  }, []);
+
   const navigateToHomeScreen = () => {
    
         setTimeout(() => {
