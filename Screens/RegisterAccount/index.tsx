@@ -83,7 +83,7 @@ const RegisterAccount = ({navigation}: any) => {
       <View style={{backgroundColor: Color.lightgrey, height: height}}>
         <View
           style={{
-            backgroundColor: Color.mainColor,
+            backgroundColor: Color.bgMain,
             height: height / 1.7,
             borderBottomEndRadius: 100,
             borderBottomStartRadius: 100,
@@ -91,7 +91,7 @@ const RegisterAccount = ({navigation}: any) => {
           {/* logo */}
           <View style={{alignItems: 'center'}}>
             <Image
-              source={require('../../Images/logowhite.png')}
+             source={require('../../Images/LOGO.png')}
               style={styles.logo}
               resizeMode="contain"
             />
@@ -224,7 +224,7 @@ const RegisterAccount = ({navigation}: any) => {
                 activeOpacity={0.8}
                 onPress={() => navigation.navigate('Home')}
                 style={{
-                  backgroundColor: Color.red,
+                  backgroundColor: "black",
                   paddingHorizontal: 70,
                   paddingVertical: 13,
                   borderRadius: 25,
@@ -281,7 +281,7 @@ const RegisterAccount = ({navigation}: any) => {
                   textAlign: 'center',
                 }}>
                 Login With{''}
-                <Text style={{color: Color.red, fontFamily: 'Poppins-Medium'}}>
+                <Text style={{color: "black", fontFamily: 'Poppins-Medium'}}>
                   {' '}
                   Mobile Number
                 </Text>

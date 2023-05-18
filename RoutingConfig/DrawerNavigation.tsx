@@ -22,6 +22,7 @@ import Support from '../Screens/Support';
 import LoginAccount from '../Screens/LoginAccount';
 import RestaurantDetails from '../Screens/Foods/RestaurantDetails';
 import NearByRestaurant from '../Screens/Foods/NearByRestaurant';
+import AddToCart from '../Screens/Foods/AddToCart';
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
@@ -43,6 +44,7 @@ function MyDrawer() {
       <Drawer.Screen name="Food" component={Food} />
       <Drawer.Screen name="NearByRestaurant" component={NearByRestaurant} />
       <Drawer.Screen name="RestaurantDetails" component={RestaurantDetails} />
+      <Drawer.Screen name="AddToCart" component={AddToCart} />
       <Drawer.Screen name="ApplyForJob" component={ApplyForJob} />
       <Drawer.Screen name="Settings" component={Settings} />
       <Drawer.Screen name="Profile" component={Profile} />

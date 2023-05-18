@@ -141,7 +141,7 @@ const AddToCart = ({navigation, route}: any) => {
                 </Text>
                 <TouchableOpacity onPress={() => plusQty(item, index)}>
                   <Image
-                    source={require('../../../Images/PLUS.png')}
+                    source={require('../../../Images/plusnew.png')}
                     style={{width: 20, height: 20}}
                   />
                 </TouchableOpacity>
@@ -160,7 +160,7 @@ const AddToCart = ({navigation, route}: any) => {
             <Text
               style={{
                 fontSize: 18,
-                color: Color.purple,
+                color: "black",
                 fontFamily: 'Poppins-SemiBold',
               }}>
               Rs. {item.price}
@@ -307,8 +307,9 @@ const AddToCart = ({navigation, route}: any) => {
           </TouchableOpacity>
           <TouchableOpacity style={styles.button}>
             <Text
-              style={{color: 'white', fontSize: 18}}
-              onPress={NavigateToCheckout}>
+              style={{color: 'black',fontWeight:"700", fontSize: 18}}
+              // onPress={NavigateToCheckout}
+              >
               Checkout
             </Text>
           </TouchableOpacity>
@@ -331,6 +332,6 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     marginTop: 20,
     paddingVertical: 10,
-    backgroundColor: '#5E20F4',
+    backgroundColor: 'yellow',
   },
 });

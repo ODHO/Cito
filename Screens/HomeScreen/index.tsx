@@ -32,7 +32,7 @@ const HomeScreen = ({navigation}: any) => {
     },
     {
       id: 2,
-      image: require('../../Images/angethi.png'),
+      image: require('../../Images/kfcbanner.png'),
     },
     {
       id: 3,
@@ -171,7 +171,7 @@ const HomeScreen = ({navigation}: any) => {
     <ScrollView>
       <View
         style={{
-          backgroundColor: Color.mainColor,
+          backgroundColor: Color.bgMain,
           paddingHorizontal: 10,
         }}>
         <Header navigation={navigation} Drawer={true} Notification />
@@ -179,7 +179,7 @@ const HomeScreen = ({navigation}: any) => {
         <View
           style={{
             width: '98%',
-            borderColor: Color.white,
+            borderColor: "black",
             borderRadius: 10,
             display: 'flex',
             flexDirection: 'row',
@@ -188,7 +188,7 @@ const HomeScreen = ({navigation}: any) => {
             paddingVertical: 4,
             paddingHorizontal: 10,
             alignSelf: 'center',
-            backgroundColor: Color.white,
+            backgroundColor: "white",
             marginVertical: 15,
           }}>
           <TextInput
@@ -208,7 +208,7 @@ const HomeScreen = ({navigation}: any) => {
         </View>
       </View>
       {/* Custom Slider is use because paddingBottom  */}
-      <View style={{height: 100, backgroundColor: Color.mainColor}}></View>
+      <View style={{height: 100, backgroundColor: "white"}}></View>
       <View
         // colors={[Color.mainColor, Color.white]}
         style={{marginTop: -90, zIndex: 2}}>
@@ -302,7 +302,8 @@ const HomeScreen = ({navigation}: any) => {
             </TouchableOpacity>
             <TouchableOpacity
               activeOpacity={0.8}
-              onPress={() => navigation.navigate('JobsHome')}>
+              // onPress={() => navigation.navigate('JobsHome')}
+              >
               <Image
                 source={require('../../Images/rider.png')}
                 style={{width: 110, height: 110, borderRadius: 5}}
@@ -314,7 +315,7 @@ const HomeScreen = ({navigation}: any) => {
                   fontSize: 16,
                   color: Color.heading,
                 }}>
-                Jobs
+                Riders
               </Text>
             </TouchableOpacity>
             {/* <TouchableOpacity

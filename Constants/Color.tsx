@@ -7,5 +7,6 @@ export default {
   heading: '#4D4D4D',
   buttonBg: '#00A651',
   purple: '#5E20F4',
-  bgMain:'#000'
+  // bgMain:'#000',
+  bgMain:'yellow'
 };

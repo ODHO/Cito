@@ -117,7 +117,7 @@ const LoginAccount = ({navigation}: any) => {
                       //   setLoginFields({...loginFields, email: e})
                       // }
                       style={{
-                        width: Dimensions.get('screen').width / 1.21,
+                        width: Dimensions.get('screen').width / 1.21,color:"black",
                         padding: 12,
                       }}
                     />
@@ -140,7 +140,7 @@ const LoginAccount = ({navigation}: any) => {
                       //   setLoginFields({...loginFields, password: e})
                       // }
                       style={{
-                        width: Dimensions.get('window').width / 1.5,
+                        width: Dimensions.get('window').width / 1.5,color:"black",
                         padding: 12,
                       }}
                     />
@@ -167,7 +167,7 @@ const LoginAccount = ({navigation}: any) => {
                   onPress={() => navigation.navigate('ForgotPassword')}>
                   <Text
                     style={{
-                      color: Color.red,
+                      color: "black",
                       fontFamily: 'Poppins-Medium',
                       marginLeft: 25,
                     }}>
@@ -180,7 +180,7 @@ const LoginAccount = ({navigation}: any) => {
                     onPress={() => navigation.navigate('Home')}
                     activeOpacity={0.8}
                     style={{
-                      backgroundColor: Color.red,
+                      backgroundColor: Color.mainColor,
                       paddingHorizontal: 70,
                       paddingVertical: 13,
                       borderRadius: 25,
@@ -238,7 +238,7 @@ const LoginAccount = ({navigation}: any) => {
                     }}>
                     Login With{''}
                     <Text
-                      style={{color: Color.red, fontFamily: 'Poppins-Medium'}}>
+                      style={{color: "black", fontFamily: 'Poppins-Medium'}}>
                       {' '}
                       Mobile Number
                     </Text>

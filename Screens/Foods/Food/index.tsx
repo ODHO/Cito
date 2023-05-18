@@ -378,7 +378,7 @@ const Food = ({navigation}: any) => {
       <ScrollView style={{flex: 1}}>
         <View
           style={{
-            backgroundColor: Color.mainColor,
+            backgroundColor: Color.bgMain,
             paddingHorizontal: 10,
           }}>
           <Header

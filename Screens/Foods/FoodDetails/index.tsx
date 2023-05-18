@@ -196,7 +196,7 @@ const FoodDetails = ({navigation, route}: any) => {
               </Text>
               <TouchableOpacity onPress={plusQty}>
                 <Image
-                  source={require('../../../Images/PLUS.png')}
+                  source={require('../../../Images/plusnew.png')}
                   style={{width: 20, height: 20}}
                 />
               </TouchableOpacity>
@@ -205,7 +205,7 @@ const FoodDetails = ({navigation, route}: any) => {
               <Text
                 style={{
                   fontSize: 22,
-                  color: Color.purple,
+                  color: "black",
                   fontFamily: 'Poppins-SemiBold',
                 }}>
                 Rs.{data.price * quantity}
@@ -213,8 +213,8 @@ const FoodDetails = ({navigation, route}: any) => {
             </View>
           </View>
           <View>
-            <TouchableOpacity onPress={addCartData} style={styles.button}>
-              <Text style={{color: 'white', fontSize: 18}}>Add To Cart</Text>
+            <TouchableOpacity onPress={()=>navigation.navigate("AddToCart")} style={styles.button}>
+              <Text style={{color: 'white',fontWeight:"700", fontSize: 18}}>Add To Cart</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -234,6 +234,6 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     marginTop: 20,
     paddingVertical: 10,
-    backgroundColor: '#5E20F4',
+    backgroundColor: 'black',
   },
 });

@@ -28,7 +28,7 @@ const ForgotPassword = ({navigation}: any) => {
       <View style={{backgroundColor: Color.lightgrey, height: height}}>
         <View
           style={{
-            backgroundColor: Color.mainColor,
+            backgroundColor: Color.bgMain,
             height: height / 1.7,
             borderBottomEndRadius: 100,
             borderBottomStartRadius: 100,
@@ -36,7 +36,7 @@ const ForgotPassword = ({navigation}: any) => {
           {/* logo */}
           <View style={{alignItems: 'center'}}>
             <Image
-              source={require('../../Images/logowhite.png')}
+              source={require('../../Images/LOGO.png')}
               style={styles.logo}
               resizeMode="contain"
             />
@@ -84,7 +84,7 @@ const ForgotPassword = ({navigation}: any) => {
                 onPress={() => navigation.navigate('NewPassword')}
                 activeOpacity={0.8}
                 style={{
-                  backgroundColor: Color.red,
+                  backgroundColor: "black",
                   paddingHorizontal: 70,
                   paddingVertical: 13,
                   borderRadius: 25,

@@ -44,7 +44,7 @@ const OtpScreen = ({navigation}: any) => {
       <View style={{backgroundColor: Color.lightgrey, height: height}}>
         <View
           style={{
-            backgroundColor: Color.mainColor,
+            backgroundColor: Color.bgMain,
             height: height / 1.7,
             borderBottomEndRadius: 100,
             borderBottomStartRadius: 100,
@@ -52,7 +52,7 @@ const OtpScreen = ({navigation}: any) => {
           {/* logo */}
           <View style={{alignItems: 'center'}}>
             <Image
-              source={require('../../Images/logowhite.png')}
+              source={require('../../Images/LOGO.png')}
               style={styles.logo}
               resizeMode="contain"
             />
@@ -74,6 +74,7 @@ const OtpScreen = ({navigation}: any) => {
                 fontFamily: 'Poppins-SemiBold',
                 fontSize: 14,
                 marginTop: 20,
+                padding:10,
                 textAlign: 'center',
               }}>
               Thank you for Registering with you.Please type the OTP as shared
@@ -106,7 +107,7 @@ const OtpScreen = ({navigation}: any) => {
                 onPress={() => navigation.navigate('HomeScreen')}
                 activeOpacity={0.8}
                 style={{
-                  backgroundColor: Color.red,
+                  backgroundColor: "black",
                   paddingHorizontal: 70,
                   paddingVertical: 13,
                   borderRadius: 25,

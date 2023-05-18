@@ -175,6 +175,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('screen').width / 5,
   },
   icon: {
+    tintColor:"black",
     height: Dimensions.get('screen').height / 16,
     width: Dimensions.get('screen').width / 16,
   },
