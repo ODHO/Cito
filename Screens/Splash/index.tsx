@@ -9,21 +9,11 @@ const Splash = ({navigation}: any) => {
     checkUser();
   }, []);
   const navigateToHomeScreen = () => {
-    AsyncStorage.getItem('tokenExpiryDate').then((val: any) => {
-      let date1 = JSON.parse(val);
-      const expiryDate: any = new Date(date1).getTime();
-      const date: any = new Date().getTime();
-
-      if (Number(expiryDate) > Number(date)) {
-        setTimeout(() => {
-          navigation.replace('HomeScreen');
-        }, 2000);
-      } else {
+   
         setTimeout(() => {
           navigation.replace('LoginAccount');
         }, 3000);
-      }
-    });
+      
   };
   useEffect(() => {
     navigateToHomeScreen();

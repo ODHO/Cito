@@ -47,7 +47,7 @@ const RoutingConfig = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="OnBoarding" component={OnBoarding} />
+        {/* <Stack.Screen name="OnBoarding" component={OnBoarding} /> */}
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="LoginAccount" component={LoginAccount} />
         <Stack.Screen name="RegisterAccount" component={RegisterAccount} />

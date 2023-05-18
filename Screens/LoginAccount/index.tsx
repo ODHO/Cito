@@ -177,7 +177,7 @@ const LoginAccount = ({navigation}: any) => {
                 {/* Login Button */}
                 <View style={{alignItems: 'center', marginVertical: 15}}>
                   <TouchableOpacity
-                    onPress={() => navigation.navigate('Home')}
+                    onPress={() => navigation.navigate('HomeScreen')}
                     activeOpacity={0.8}
                     style={{
                       backgroundColor: Color.mainColor,
@@ -185,9 +185,9 @@ const LoginAccount = ({navigation}: any) => {
                       paddingVertical: 13,
                       borderRadius: 25,
                     }}>
-                    {loginLoading ? (
+                    {/* {loginLoading ? (
                       <ActivityIndicator size={'small'} color={'white'} />
-                    ) : (
+                    ) : ( */}
                       <Text
                         style={{
                           color: Color.white,
@@ -195,7 +195,7 @@ const LoginAccount = ({navigation}: any) => {
                         }}>
                         LOGIN
                       </Text>
-                    )}
+                    {/* )} */}
                   </TouchableOpacity>
                 </View>
                 {/* or Text */}
